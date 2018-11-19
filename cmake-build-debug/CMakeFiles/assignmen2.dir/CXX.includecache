@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.h
+vector
+-
+
+/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/main.cpp
+iostream
+-
+BinaryHeap.h
+/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.h
+iostream
+-
+

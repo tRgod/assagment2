@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/assignmen2.dir/main.cpp.o CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o  -o assignmen2 
