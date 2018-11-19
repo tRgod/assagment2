@@ -23,11 +23,13 @@ class BinaryHeap
             void deleteMin( int & minItem );
             void makeEmpty( );
             int findkSmallest(int k);
-            int quickSelect(int n);
+            int quickSelect(int k);
             private:
+            void quickSelect(vector<int> &a, int left, int right, int k);
             int numOfObs=0;
             int currentSize;
             vector<int> array;
+            const int & median3(vector<int> &a, int left, int right);
             void insertionSort(vector<int> &a, int left, int right);
 // Number of elements in heap
 // The heap array

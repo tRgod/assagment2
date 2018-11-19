@@ -4,10 +4,11 @@
 using  namespace std;
 int main() {
     BinaryHeap foo (1000);
-    for (int i = 1; i <30 ; ++i) {
-        foo.insert(i);
+   vector<int> array= {10,123,234,12,345,134,5,2,6,1,7,235,357};
+    for (int i = 0; i <array.size() ; ++i) {
+        foo.insert(array[i]);
     }
 
-    cout<<foo.findkSmallest(20)<<endl;
+    cout<<foo.quickSelect(6)<<endl;
     return 0;
 }

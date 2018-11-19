@@ -121,16 +121,42 @@ int BinaryHeap::findkSmallest(int k) {
 }
 
 
-int BinaryHeap::quickSelect(int n) {
-    return 0;
+void BinaryHeap::quickSelect(vector<int> &a, int left, int right,int k) {
+
+    if( left + 10 <= right )
+    {
+        const int & pivot = median3( a, left, right );
+// Begin partitioning
+        int i = left, j = right - 1;
+        for( ; ; )
+        {
+            while( a[ ++i ] < pivot ) { }
+            while( pivot < a[ --j ] ) { }
+            if( i < j )
+                std::swap( a[ i ], a[ j ] );
+            else
+                break;
+        }
+        std::swap( a[ i ], a[ right - 1 ] );
+// Restore pivot
+// Recurse; only this part changes
+        if( k <= i )
+            quickSelect( a, left, i - 1, k );
+        else if( k > i + 1 )
+            quickSelect( a, i + 1, right, k );
+    }
+    else
+        insertionSort(a,left,right);
+
+// Do an insertion sort on the subarray
 }
 
 void BinaryHeap::insertionSort(vector<int> &a, int left, int right) {
-    
-    for (int i = 0; i < a.size() ; ++i) {
-        int tmp * move(a[p]);
+        int tmp;
+    for (int p = left; p < right ; ++p) {
+        tmp * move(a[p]);
         int j;
-        for (int j = i; j >0 && tmp< a[j-1]; --j) {
+        for (int j = p; j >0 && tmp< a[j-1]; --j) {
             a[j] = move(a[j-1]);
             a[j]=move(tmp);
 
@@ -138,4 +164,22 @@ void BinaryHeap::insertionSort(vector<int> &a, int left, int right) {
 
     }
 
+}
+
+int BinaryHeap::quickSelect(int k) {
+    quickSelect(array,1,currentSize ,k);
+    return array[k];
+}
+
+const int &BinaryHeap::median3(vector<int> &a, int left, int right) {
+    int center = ( left + right ) / 2;
+    if( a[ center ] < a[ left ] )
+        std::swap( a[ left ], a[ center ] );
+    if( a[ right ] < a[ left ] )
+        std::swap( a[ left ], a[ right ] );
+    if( a[ right ] < a[ center ] )
+        std::swap( a[ center ], a[ right ] );
+// Place pivot at position right - 1
+    std::swap( a[ center ], a[ right - 1 ] );
+    return a[ right - 1 ];
 }
