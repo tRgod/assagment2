@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.cpp" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o"
-  "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/main.cpp" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles/assignmen2.dir/main.cpp.o"
+  "/home/thor/assagment2/BinaryHeap.cpp" "/home/thor/assagment2/cmake-build-debug/CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o"
+  "/home/thor/assagment2/main.cpp" "/home/thor/assagment2/cmake-build-debug/CMakeFiles/assignmen2.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

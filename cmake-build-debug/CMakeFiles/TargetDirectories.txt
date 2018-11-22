@@ -1,3 +1,3 @@
-/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles/assignmen2.dir
+/home/thor/assagment2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/thor/assagment2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/thor/assagment2/cmake-build-debug/CMakeFiles/assignmen2.dir

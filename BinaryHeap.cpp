@@ -64,8 +64,10 @@ void BinaryHeap::deleteMin()
         return;
 
     array[ 1 ] = std::move( array[ currentSize-- ] );
+    operationCounterSmallestK++;
     numOfObs++;
     percolateDown( 1 );
+
 
 }
 
@@ -85,65 +87,82 @@ void BinaryHeap::makeEmpty() {
 }
 
 void BinaryHeap::buildHeap() {
-    for( int i = currentSize / 2; i > 0; --i )
-        percolateDown( i );
+    for (int i = currentSize / 2; i > 0; --i)
+    {
+        percolateDown(i);
+      //  operationCounterSmallestK++;
 
+    }
 }
 
 void BinaryHeap::percolateDown(int hole) {
     int child;
     int tmp = move( array[ hole ] );
+    //operationCounterSmallestK++;
 
     for( ; hole * 2 <= currentSize; hole = child )
     {
         child = hole * 2;
-        if( child != currentSize && array[ child + 1 ] < array[ child ] )
+        if( child != currentSize && array[ child + 1 ] < array[ child ] ) {
             ++child;
-        if( array[ child ] < tmp )
-            array[ hole ] = std::move( array[ child ] );
-        else
+           operationCounterSmallestK+=2;
+        }
+        if( array[ child ] < tmp ) {
+            array[hole] = std::move(array[child]);
+            operationCounterSmallestK++;
+
+        }
+        else {
+
             break;
+        }
     }
     array[ hole ] = std::move( tmp );
+
 }
 
 
 
 int BinaryHeap::findkSmallest(int k) {
-    vector<int> arrcopy = array;
-    arrcopy.resize(currentSize);
-    BinaryHeap copy(arrcopy);
-    for (int i = 0; i < k-1 ; i++) {
+    //vector<int> arrcopy = array;
+  //  arrcopy.resize(currentSize);
+//    BinaryHeap copy(arrcopy);
+    for (int i = 0; i < k ; i++) {
         numOfObs++;
-        copy.deleteMin();
+        //operationCounterSmallestK ++;
+        deleteMin();
     }
-    return copy.array[1];
+    return array[1];
 }
 
 
 void BinaryHeap::quickSelect(vector<int> &a, int left, int right,int k) {
 
-    if( left + 10 <= right )
-    {
-        const int & pivot = median3( a, left, right );
+    if( left + 10 <= right ) {
+        const int &pivot = median3(a, left, right);
 // Begin partitioning
         int i = left, j = right - 1;
-        for( ; ; )
-        {
-            while( a[ ++i ] < pivot ) { }
-            while( pivot < a[ --j ] ) { }
-            if( i < j )
-                std::swap( a[ i ], a[ j ] );
-            else
+        for (;;) {
+            while (a[++i] < pivot) {}
+            while (pivot < a[--j]) {}
+            if (i < j) {
+                std::swap(a[i], a[j]);
+                operationCounterQuick+=3;
+
+
+            } else
                 break;
         }
-        std::swap( a[ i ], a[ right - 1 ] );
+        std::swap(a[i], a[right - 1]);
+
 // Restore pivot
 // Recurse; only this part changes
-        if( k <= i )
-            quickSelect( a, left, i - 1, k );
-        else if( k > i + 1 )
-            quickSelect( a, i + 1, right, k );
+        if (k <= i) {
+            quickSelect(a, left, i - 1, k);
+        } else if (k > i + 1) {
+            quickSelect(a, i + 1, right, k);
+        }
+
     }
     else
         insertionSort(a,left,right);
@@ -154,17 +173,15 @@ void BinaryHeap::quickSelect(vector<int> &a, int left, int right,int k) {
 void BinaryHeap::insertionSort(vector<int> &a, int left, int right) {
         int tmp;
     for (int p = left; p < right ; ++p) {
-        tmp * move(a[p]);
+        tmp = move(a[p]);
         int j;
-        for (int j = p; j >0 && tmp< a[j-1]; --j) {
-            a[j] = move(a[j-1]);
-            a[j]=move(tmp);
-
+        for (int j = p; j > 0 && tmp < a[j - 1]; --j)
+            a[j] = move(a[j - 1]);
+        a[j] = move(tmp);
         }
 
     }
 
-}
 
 int BinaryHeap::quickSelect(int k) {
     quickSelect(array,1,currentSize ,k);
@@ -182,4 +199,12 @@ const int &BinaryHeap::median3(vector<int> &a, int left, int right) {
 // Place pivot at position right - 1
     std::swap( a[ center ], a[ right - 1 ] );
     return a[ right - 1 ];
+}
+
+int BinaryHeap::getoperationCounterQuick() {
+    return operationCounterQuick;
+}
+
+int BinaryHeap::getoperationCounterSmallestK(){
+    return operationCounterSmallestK;
 }

@@ -43,10 +43,10 @@ RM = /home/thor/Hentet/CLion-2018.2.4/clion-2018.2.4/bin/cmake/linux/bin/cmake -
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2"
+CMAKE_SOURCE_DIR = /home/thor/assagment2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug"
+CMAKE_BINARY_DIR = /home/thor/assagment2/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/assignmen2.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/assignmen2.dir/flags.make
 
 CMakeFiles/assignmen2.dir/main.cpp.o: CMakeFiles/assignmen2.dir/flags.make
 CMakeFiles/assignmen2.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignmen2.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignmen2.dir/main.cpp.o -c "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thor/assagment2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/assignmen2.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignmen2.dir/main.cpp.o -c /home/thor/assagment2/main.cpp
 
 CMakeFiles/assignmen2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignmen2.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/main.cpp" > CMakeFiles/assignmen2.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thor/assagment2/main.cpp > CMakeFiles/assignmen2.dir/main.cpp.i
 
 CMakeFiles/assignmen2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignmen2.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/main.cpp" -o CMakeFiles/assignmen2.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thor/assagment2/main.cpp -o CMakeFiles/assignmen2.dir/main.cpp.s
 
 CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o: CMakeFiles/assignmen2.dir/flags.make
 CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o: ../BinaryHeap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o -c "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/thor/assagment2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o -c /home/thor/assagment2/BinaryHeap.cpp
 
 CMakeFiles/assignmen2.dir/BinaryHeap.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/assignmen2.dir/BinaryHeap.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.cpp" > CMakeFiles/assignmen2.dir/BinaryHeap.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/thor/assagment2/BinaryHeap.cpp > CMakeFiles/assignmen2.dir/BinaryHeap.cpp.i
 
 CMakeFiles/assignmen2.dir/BinaryHeap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/assignmen2.dir/BinaryHeap.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.cpp" -o CMakeFiles/assignmen2.dir/BinaryHeap.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/thor/assagment2/BinaryHeap.cpp -o CMakeFiles/assignmen2.dir/BinaryHeap.cpp.s
 
 # Object files for target assignmen2
 assignmen2_OBJECTS = \
@@ -95,7 +95,7 @@ assignmen2: CMakeFiles/assignmen2.dir/main.cpp.o
 assignmen2: CMakeFiles/assignmen2.dir/BinaryHeap.cpp.o
 assignmen2: CMakeFiles/assignmen2.dir/build.make
 assignmen2: CMakeFiles/assignmen2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable assignmen2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/thor/assagment2/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable assignmen2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assignmen2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/assignmen2.dir/clean:
 .PHONY : CMakeFiles/assignmen2.dir/clean
 
 CMakeFiles/assignmen2.dir/depend:
-	cd "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug" "/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/cmake-build-debug/CMakeFiles/assignmen2.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/thor/assagment2/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/thor/assagment2 /home/thor/assagment2 /home/thor/assagment2/cmake-build-debug /home/thor/assagment2/cmake-build-debug /home/thor/assagment2/cmake-build-debug/CMakeFiles/assignmen2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/assignmen2.dir/depend
 

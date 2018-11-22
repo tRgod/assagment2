@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.h
+/home/thor/assagment2/BinaryHeap.h
 vector
 -
 
-/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/main.cpp
+/home/thor/assagment2/main.cpp
 iostream
 -
 BinaryHeap.h
-/home/thor/Dokumenter/algoritmer og datastuktur/assignmen2/BinaryHeap.h
+/home/thor/assagment2/BinaryHeap.h
 iostream
 -
 

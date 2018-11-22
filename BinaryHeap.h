@@ -24,7 +24,11 @@ class BinaryHeap
             void makeEmpty( );
             int findkSmallest(int k);
             int quickSelect(int k);
+            int getoperationCounterSmallestK();
+            int getoperationCounterQuick();
             private:
+            int operationCounterSmallestK =0;
+            int operationCounterQuick=0;
             void quickSelect(vector<int> &a, int left, int right, int k);
             int numOfObs=0;
             int currentSize;
