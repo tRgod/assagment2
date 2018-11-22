@@ -175,7 +175,7 @@ void BinaryHeap::insertionSort(vector<int> &a, int left, int right) {
     for (int p = left; p < right ; ++p) {
         tmp = move(a[p]);
         int j;
-        for (int j = p; j > 0 && tmp < a[j - 1]; --j)
+        for (j = p; j > 0 && tmp < a[j - 1]; --j)
             a[j] = move(a[j - 1]);
         a[j] = move(tmp);
         }

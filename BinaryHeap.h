@@ -6,6 +6,7 @@
 #define ASSIGNMEN2_BINARYHEAP_H
 
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
