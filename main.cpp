@@ -30,8 +30,8 @@ for(int j=0; j<10; j++){
         avgcount1+=bar1.getoperationCounterQuick();
         smkcount1+=foo1.getoperationCounterSmallestK();
 }
-cout << endl << "Avrage find smallest Counter: " << smkcount1/10 << endl;
-cout << "Avrage quick Counter: "<< avgcount1/10 << endl << endl;
+cout << endl << "Average find smallest Counter: " << smkcount1/10 << endl;
+cout << "Average quick Counter: "<< avgcount1/10 << endl << endl;
 
 cout << "-----------------------------------------------------------" << endl;
 
@@ -51,8 +51,8 @@ for(int j=0; j<10; j++){
         avgcount5+=bar5.getoperationCounterQuick();
         smkcount5+=foo5.getoperationCounterSmallestK();
 }
-cout << endl <<  "Avrage find smallest Counter: " << smkcount5/10 << endl;
-cout << "Avrage quick Counter: " << avgcount5/10<< endl << endl;
+cout << endl <<  "Average find smallest Counter: " << smkcount5/10 << endl;
+cout << "Average quick Counter: " << avgcount5/10<< endl << endl;
 
 cout << "-----------------------------------------------------------" << endl;
 
@@ -72,7 +72,7 @@ for(int j=0; j<10; j++){
         avgcount10+=bar10.getoperationCounterQuick();
         smkcount10+=foo10.getoperationCounterSmallestK();
 }
-cout << endl << "Avrage find smallest Counter: " << smkcount10/10 << endl;
-cout << "Avrage quick Counter: " << avgcount10/10 << endl << endl;
+cout << endl << "Average find smallest Counter: " << smkcount10/10 << endl;
+cout << "Average quick Counter: " << avgcount10/10 << endl << endl;
     return 0;
 }
