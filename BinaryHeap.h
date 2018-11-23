@@ -1,7 +1,3 @@
-//
-// Created by thor on 19-11-18.
-//
-
 #ifndef ASSIGNMEN2_BINARYHEAP_H
 #define ASSIGNMEN2_BINARYHEAP_H
 

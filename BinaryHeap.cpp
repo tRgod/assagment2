@@ -1,7 +1,3 @@
-//
-// Created by thor on 19-11-18.
-//
-
 #include "BinaryHeap.h"
 
 
