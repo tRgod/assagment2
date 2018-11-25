@@ -14,6 +14,30 @@ int main() {
     int smkcount5=0;
     int smkcount10=0;
 
+
+    cout << "Test with n=10, with elements from 0-> 9 included" << endl << endl;
+        vector<int> array(9);
+        array[0]=1;
+        array[1]=9;
+        array[2]=2;
+        array[3]=8;
+        array[4]=3;
+        array[5]=7;
+        array[6]=4;
+        array[7]=6;
+        array[8]=5;
+        array[9]=0;
+
+        BinaryHeap foo(array);
+        BinaryHeap bar(array);
+        cout << "Smallest k:" << foo.findkSmallest(5) << endl;;
+        cout << "QuickSelect:" << bar.quickSelect(5) << endl;
+        cout << "SmallKCounter:" << foo.getoperationCounterSmallestK() << endl;
+        cout << "QuickCounter:" << bar.getoperationCounterQuick()<<endl;
+
+cout << "-----------------------------------------------------------" << endl;
+
+
     cout << "Test with n=1000, run 10 times" << endl << endl;
 for(int j=0; j<10; j++){
     cout << endl << "Run nr." << j << endl;
